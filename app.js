@@ -58,7 +58,7 @@ function colorGenerator() {
 
   body.style.background = "#" + rgb(red, green, blue);
 
-  redGreenBlue.setAttribute("placeholder", `rgb(${red},${red},${red})`);
+  redGreenBlue.setAttribute("placeholder", `rgb(${red},${green},${blue})`);
   hex.setAttribute("placeholder", "#" + rgb(red, green, blue));
 }
 btn.addEventListener("click", colorGenerator);
