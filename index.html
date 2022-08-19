@@ -11,17 +11,27 @@
 <body>
   <div class="container">
     <div>
-      <p class="message"></p>
+      <h1>Color Generator</h1>
     </div>
     <div>
       <label for="rgb">RGB</label>
       <input type="text" id="rgb" placeholder="rgb(255, 255, 255)">
-      <i class="fa fa-clipboard" class="rgb" aria-hidden="true"></i>
+      <div class="tooltip">
+        <button id="rgb-copy">
+          <span class="tooltiptext" class="myTooltip">Copy to clipboard</span>
+          <i class="fa fa-clipboard" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
     <div>
       <label for="hex">HEX</label>
       <input type="text" id="hex" placeholder="#FFFFFF">
-      <i class="fa fa-clipboard" class="hex" aria-hidden="true"></i>
+      <div class="tooltip">
+        <button id="hex-copy">
+          <span class="tooltiptext" class="myTooltip">Copy to clipboard</span>
+          <i class="fa fa-clipboard" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
     <div>
       <span>&emsp;&emsp;</span>
