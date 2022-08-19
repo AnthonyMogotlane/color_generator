@@ -5,17 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
 <body>
   <div class="container">
     <div>
+      <p class="message"></p>
+    </div>
+    <div>
       <label for="rgb">RGB</label>
       <input type="text" id="rgb" placeholder="rgb(255, 255, 255)">
+      <i class="fa fa-clipboard" class="rgb" aria-hidden="true"></i>
     </div>
     <div>
       <label for="hex">HEX</label>
       <input type="text" id="hex" placeholder="#FFFFFF">
+      <i class="fa fa-clipboard" class="hex" aria-hidden="true"></i>
     </div>
     <div>
       <span>&emsp;&emsp;</span>
