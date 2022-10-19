@@ -5,61 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Generator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
 </head>
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .container div {
-    margin-bottom: 3em;
-  }
-
-  #hex, #rgb {
-    color: #fff;
-    text-align: center;
-    font-weight: 500;
-    padding: 5px 0;
-  }
-
-  #hex::placeholder, #rgb::placeholder {
-    color: #000;
-  }
-
-  label, button {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  button {
-    padding: 5px;
-    background: green;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-</style>
 <body>
   <div class="container">
     <div>
+      <h1>Color Generator</h1>
+    </div>
+    <div>
       <label for="rgb">RGB</label>
       <input type="text" id="rgb" placeholder="rgb(255, 255, 255)">
+      <div class="tooltip">
+        <button id="rgb-copy">
+          <span class="tooltiptext" class="myTooltip">Copy to clipboard</span>
+          <i class="fa fa-clipboard" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
     <div>
       <label for="hex">HEX</label>
       <input type="text" id="hex" placeholder="#FFFFFF">
+      <div class="tooltip">
+        <button id="hex-copy">
+          <span class="tooltiptext" class="myTooltip">Copy to clipboard</span>
+          <i class="fa fa-clipboard" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
     <div>
       <span>&emsp;&emsp;</span>
