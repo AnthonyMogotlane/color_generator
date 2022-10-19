@@ -65,3 +65,4 @@ btn.addEventListener("click", colorGenerator);
 
 // // copy color to the clipboard
 new ClipboardJS('.copy');
+
