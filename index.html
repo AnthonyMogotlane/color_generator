@@ -7,6 +7,7 @@
   <title>Color Generator</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -15,9 +16,9 @@
     </div>
     <div>
       <label for="rgb">RGB</label>
-      <input type="text" id="rgb" placeholder="rgb(255, 255, 255)">
+      <input type="text" id="rgb" placeholder="rgb(255, 255, 255)" value="rgb(255, 255, 255)">
       <div class="tooltip">
-        <button id="rgb-copy">
+        <button class="copy" data-clipboard-target="#rgb" id="rgb-copy">
           <span class="tooltiptext" class="myTooltip">Copy to clipboard</span>
           <i class="fa fa-clipboard" aria-hidden="true"></i>
         </button>
@@ -25,9 +26,9 @@
     </div>
     <div>
       <label for="hex">HEX</label>
-      <input type="text" id="hex" placeholder="#FFFFFF">
+      <input type="text" id="hex" placeholder="#FFFFFF" value="#FFFFFF">
       <div class="tooltip">
-        <button id="hex-copy">
+        <button class="copy" data-clipboard-target="#hex" id="hex-copy">
           <span class="tooltiptext" class="myTooltip">Copy to clipboard</span>
           <i class="fa fa-clipboard" aria-hidden="true"></i>
         </button>

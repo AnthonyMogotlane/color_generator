@@ -63,19 +63,6 @@ function colorGenerator() {
 }
 btn.addEventListener("click", colorGenerator);
 
-// copy color to the clipboard
-// for rgb
-document.querySelector("#rgb-copy").addEventListener("click", (e) => {
-    let copyText = document.getElementById("rgb");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyText.value);
-});
+// // copy color to the clipboard
+new ClipboardJS('.copy');
 
-// for hex
-document.querySelector("#hex-copy").addEventListener("click", (e) => {
-    let copyText = document.getElementById("hex");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyText.value);
-});
